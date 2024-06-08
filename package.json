@@ -2,15 +2,14 @@
   "name": "lombaitechno",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+    "dev" : "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "tailwindcss": "^3.4.3"
+    "tailwindcss": "^3.4.4"
   }
 }
