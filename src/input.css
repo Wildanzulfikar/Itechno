@@ -10,7 +10,6 @@
 }
 
 =======
-<<<<<<< HEAD
 .text-gradient {
     background: -webkit-linear-gradient(24deg, #FA00FF, #2765C1);
     -webkit-background-clip: text;
@@ -30,7 +29,7 @@ ul li a:hover::after {
     transform: scaleX(0.6);
     transition: 0.2s linear;
 }
-=======
+
 >>>>>>> e7221f5b686717852ba05b17e72382640491f228
 #teknologi {
   background: url("../assets/img/Background.png") no-repeat center center;
