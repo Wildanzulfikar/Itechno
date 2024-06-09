@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 #teknologi {
   background: url("../assets/img/Background.png") no-repeat center center;
   background-size: cover;
@@ -9,4 +15,12 @@
 
 .bg-custom {
   background: linear-gradient(to right, #313874 20%, #0d0404 60%, #231b7c 80%);
+}
+
+.gradient-border {
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #ff0000, #4d0fff) 1;
+
+  padding: 10px;
 }
