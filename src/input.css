@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.text-gradient {
+    background: -webkit-linear-gradient(24deg, #FA00FF, #2765C1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+ul li a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.2rem solid purple;
+    transform: scaleX(0);
+}
+
+ul li a:hover::after {
+    transform: scaleX(0.6);
+    transition: 0.2s linear;
+}
