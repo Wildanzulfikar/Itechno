@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-<<<<<<< HEAD
 .text-gradient {
     background: -webkit-linear-gradient(24deg, #FA00FF, #2765C1);
     -webkit-background-clip: text;
@@ -22,7 +21,7 @@ ul li a:hover::after {
     transform: scaleX(0.6);
     transition: 0.2s linear;
 }
-=======
+
 #teknologi {
   background: url("../assets/img/Background.png") no-repeat center center;
   background-size: cover;
@@ -31,4 +30,3 @@ ul li a:hover::after {
 .bg-custom {
   background: linear-gradient(to right, #313874 20%, #0d0404 60%, #231b7c 80%);
 }
->>>>>>> 75e6fadb2145519d9f969df9daa4ee01bfc70a7f
