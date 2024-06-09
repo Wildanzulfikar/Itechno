@@ -2,24 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-.text-gradient {
-    background: -webkit-linear-gradient(24deg, #FA00FF, #2765C1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+.text-gradient {
+  background: -webkit-linear-gradient(24deg, #fa00ff, #2765c1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 ul li a::after {
-    content: '';
-    display: block;
-    padding-bottom: 0.2rem;
-    border-bottom: 0.2rem solid purple;
-    transform: scaleX(0);
+  content: "";
+  display: block;
+  padding-bottom: 0.2rem;
+  border-bottom: 0.2rem solid purple;
+  transform: scaleX(0);
 }
 
 ul li a:hover::after {
-    transform: scaleX(0.6);
-    transition: 0.2s linear;
+  transform: scaleX(0.6);
+  transition: 0.2s linear;
 }
 
 #teknologi {
@@ -29,4 +34,12 @@ ul li a:hover::after {
 
 .bg-custom {
   background: linear-gradient(to right, #313874 20%, #0d0404 60%, #231b7c 80%);
+}
+
+.gradient-border {
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #ff0000, #4d0fff) 1;
+
+  padding: 10px;
 }
