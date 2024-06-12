@@ -1,7 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
 /* animasi navigation */
 ul li a::after {
   content: "";
@@ -16,34 +20,29 @@ ul li a:hover::after {
   transition: 0.2s linear;
 }
 
-.text-gradient, .kolaborasi {
-    text-transform: uppercase;
-   background-image: linear-gradient(
-     -225deg,
-     #5E1675 0%,
-     #EE4266 29%,
-     #FFD23F 67%,
-     #337357 100%
-   );
-   background-size: auto auto;
-   background-clip: border-box;
-   background-size: 200% auto;
-   color: #fff;
-   background-clip: text;
-   text-fill-color: transparent;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   animation: textclip 2s linear infinite;
-   display: inline-block;
- }
+.text-gradient,
+.kolaborasi {
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg, #5e1675 0%, #ee4266 29%, #ffd23f 67%, #337357 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
 
-  .tilt-box {
-    transform-style: preserve-3d;
-  }
+.tilt-box {
+  transform-style: preserve-3d;
+}
 
-  .tilt {
-    transform: translateZ(60px);
-  }
+.tilt {
+  transform: translateZ(60px);
+}
 
 #teknologi {
   background: url("../assets/img/Background.png") no-repeat center center;
@@ -81,14 +80,8 @@ ul li a:hover::after {
   transform: scale(1.2);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: sans-serif;
-  overflow-x: hidden;
 }
 
 nav ul {
@@ -102,7 +95,6 @@ nav ul li a {
   text-decoration: none;
   font-size: 0.8em;
 }
-
 
 /* hamburger menu */
 .menu-toggle {
@@ -142,46 +134,69 @@ nav ul li a {
   transform-origin: 0 100%;
 }
 
-.menu-toggle input:checked ~ span:nth-child(2){
+.menu-toggle input:checked ~ span:nth-child(2) {
   transform: rotate(45deg) translate(-1px, -1px);
   background-color: white;
 }
 
-.menu-toggle input:checked ~ span:nth-child(4){
+.menu-toggle input:checked ~ span:nth-child(4) {
   background-color: white;
   transform: rotate(-45deg) translate(-1px, 0px);
 }
 
-.menu-toggle input:checked ~ span:nth-child(3){
+.menu-toggle input:checked ~ span:nth-child(3) {
   transform: scale(0);
   opacity: 0;
 }
 
+.swiper-slide .max-w-sm {
+  height: 400px;
+}
+
+.swiper-slide img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide .px-6.py-4 {
+  height: calc(100% - 200px);
+  overflow: hidden;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: #ffffff;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
 @media screen and (max-width: 768px) {
   nav ul {
-      width: 50%;
+    width: 50%;
   }
 }
 
 @media screen and (max-width: 1018px) {
   .menu-toggle {
-      display: flex;
+    display: flex;
   }
 
   nav ul {
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 80%;
-      height: 100vh;
-      justify-content: space-evenly;
-      flex-direction: column;
-      z-index: 9999999999;
-      transform: translateX(100%);
-      transition: all 1s;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80%;
+    height: 100vh;
+    justify-content: space-evenly;
+    flex-direction: column;
+    z-index: 9999999999;
+    transform: translateX(100%);
+    transition: all 1s;
   }
 
   nav ul.slide {
-      transform: translateX(0);
+    transform: translateX(0);
   }
 }
