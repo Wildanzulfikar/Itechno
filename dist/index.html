@@ -17,55 +17,59 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
     <!-- Swiper JS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
   </head>
   <body>
-    <div class="hero-section">
-      <div class="w-full pb-32 bg-no-repeat bg-cover bg-center bg-gradient-to-t from-[#080809] to-indigo-700">
-        <nav id="navbar" class="flex justify-between items-center">
-          <div class="logo">
-            <img class="mt-2" src="img/Brain.png" alt="logo-brain" width="108px" />
+    <section id="home" class="hero-section">
+      <div id="group-nav" class="w-full pb-36 md:h-screen bg-no-repeat bg-cover bg-center bg-gradient-to-t from-[#080809] to-indigo-700">
+        <nav id="navbar" class="w-full flex justify-between items-center px-[7%] h-24 fixed z-50">
+          <div class="logo text-white font-semibold font-[Poppins] italic tex text-2xl">
+            <h1>Iron <span class="text-red-500">Falcons</span></h1>
           </div>
-          <ul class="flex justify-evenly text-white font-[Roboto] font-semibold">
+          <ul class="flex justify-evenly gap-10 text-white font-[Roboto] text-[14px] font-medium">
             <li><a href="#home" class="hover:text-orange-500">HOME</a></li>
             <li><a href="#teknologi" class="hover:text-orange-500">TEKNOLOGI</a></li>
             <li><a href="#industri" class="hover:text-orange-500">INDUSTRI</a></li>
             <li><a href="#kolaborasi" class="hover:text-orange-500">KOLABORASI</a></li>
             <li><a href="#kontak" class="hover:text-orange-500">KONTAK</a></li>
           </ul>
-          <div class="menu-toggle mr-8">
-            <input type="checkbox">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+          <div id="hamburger-menu" class="hamburger-menu text-white text-3xl cursor-pointer" onclick="addClass()">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
         </nav>
+        <div id="dropdown-menu" class="dropdown-menu list-none">
+          <li><a href="#home" class="hover:text-orange-500">HOME</a></li>
+          <li><a href="#teknologi" class="hover:text-orange-500">TEKNOLOGI</a></li>
+          <li><a href="#industri" class="hover:text-orange-500">INDUSTRI</a></li>
+          <li><a href="#kolaborasi" class="hover:text-orange-500">KOLABORASI</a></li>
+          <li><a href="#kontak" class="hover:text-orange-500">KONTAK</a></li>
+        </div>
         <div class="hero-content flex justify-center">
-            <div class="content w-full grid grid-cols-1 md:grid-cols-2 px-8">
-              <div class="main-content-text pt-24 md:pt-36">
-                  <div class="text-white text-[24px] md:text-[30px] lg:text-[38px] font-[Poppins] font-bold leading-snug">
+            <div class="content w-full grid grid-cols-2 md:grid-cols-2 lg:grid-cols-1 px-[7%]">
+              <div class="main-content-text pt-36 md:pt-48">
+                  <div class="text-white text-[24px] md:text-[24px] lg:text-[38px] font-[Poppins] font-bold leading-snug">
                       <h1>Potensi</h1>
                       <h1 class="text-gradient">Artificial Intelligence</h1>
                       <h1>Dalam Berbagai Industri</h1>
                   </div>
-                  <div class="sub-judul text-white text-sm md:text-lg mt-6 mb-6">
+                  <div class="sub-judul text-white text-sm md:text-lg mt-6 mb-7">
                       <h2>Eksplorasi dan Implementasi Teknologi AI untuk Masa <br> Depan yang Lebih Cerdas</h2>
                   </div>
-                  <a href="" class="px-10 py-2 hover:to-blue-600 hover:from-lime-700 bg-gradient-to-r from-[#FA00FF] to-[#2765C1] rounded-sm text-white font-medium">Explore</a>
+                  <a href="https://wa.me/6281906738256" class="px-6 py-2 hover:to-blue-600 hover:from-lime-700 bg-gradient-to-r from-[#FA00FF] to-[#2765C1] rounded-sm text-white font-semibold">Hubungi Kami</a>
               </div>
-              <div class="3D flex justify-center mt-10 md:mt-16">
-                <div class="tilt-box logo-main h-[340px] w-[380px] md:w-[440px] md:h-[400px] bg-no-repeat bg-cover bg-center bg-[url(img/brain-killer.png)]">
-                  <img class="tilt w-[380px] h-[340px] md:w-[440px] md:h-[400px] bg-no-repeat bg-cover bg-center" src="img/b098226af164e11442e96499b779d3b2-removebg-preview.png" alt="brain">
+              <div class="3D flex justify-center md:pl-32 md:mt-10 w-full">
+                <div class="tilt-box logo-main h-[360px] w-[380px]  lg:w-[520px] lg:h-[480px] bg-no-repeat bg-cover bg-center bg-[url(img/brain-killer.png)]">
+                  <img class="tilt w-[380px] h-[360px] lg:w-[520px] lg:h-[480px] bg-no-repeat bg-cover bg-center" src="img/b098226af164e11442e96499b779d3b2-removebg-preview.png" alt="brain">
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
-    
-    <section id="teknologi" class="max-w-screen w-full px-4 md:px-8 py-10 min-h-screen">
-      <div class="font-poppins text-white flex justify-center">
+    <section id="teknologi" class="max-w-screen w-full py-10 min-h-screen">
+      <div class="font-poppins text-white px-[7%] flex justify-center">
         <div class="grid grid-cols-12 mt-16 bg-custom relative">
           <div class="col-span-12 lg:col-span-7 py-8 px-12">
             <div class="border border-white inline-block px-4 py-1 rounded-full">
@@ -86,9 +90,8 @@
           </div>
         </div>
       </div>
-
-      <div class="grid grid-cols-12 font-poppins justify-center mt-4 gap-8">
-        <div class="col-span-12 flex flex-col items-center text-white">
+      <div class="grid grid-cols-12 px-[7%] font-poppins justify-center mt-4 gap-8">
+        <div class="col-span-12 mt-4 flex flex-col items-center text-white">
           <div class="border border-white inline-block mb-2 px-4 py-1 rounded-full">
             <h5 class="text-xs">TEKNOLOGI</h5>
           </div>
@@ -107,7 +110,6 @@
             </div>
           </div>
         </div>
-
         <div class="text-white col-span-12 md:col-span-6 lg:col-span-6 xl:col-span-4 gradient-border bg-[#474747] bg-opacity-20 md:mt-0 rounded-sm">
           <div class="flex flex-col justify-center items-center p-12">
             <img src="../assets/icon/deepLearning.svg" alt="" />
@@ -120,7 +122,6 @@
             </div>
           </div>
         </div>
-
         <div class="text-white col-span-12 md:col-span-12 lg:col-span-12 xl:col-span-4 gradient-border bg-[#474747] bg-opacity-20 md:mt-0 lg:mt-12 rounded-sm">
           <div class="flex flex-col justify-center items-center p-12">
             <img src="../assets/icon/naturallanguage.svg" alt="" />
@@ -136,7 +137,7 @@
       </div>
     </section>
     <section id="industri" class="max-w-screen w-full px-4 md:px-8 min-h-screen text-white font-poppins py-10">
-      <div class="grid grid-cols-12 p-8 justify-center items-center">
+      <div class="grid grid-cols-12 p-8 justify-center items-center px-[7%]">
         <div class="col-span-12">
           <hr class="text-white mt-4 w-full" />
         </div>
@@ -157,9 +158,9 @@
           <h2 class="text-2xl font-semibold mt-2 text-center">IMPLEMENTASI <span class="bg-gradient-to-r from-blue-300 to-purple-700 inline-block font-semibold text-transparent bg-clip-text mb-4"> PADA AI</span></h2>
           <hr class="text-white w-1/4 mb-6" />
         </div>
-        <div class="col-span-12 flex flex-col items-center justify-center">
+        <div class="col-span-12 flex flex-col items-center justify-center px-[7%]">
           <div class="swiper text-white">
-              <div class="swiper-wrapper mx-[10px] lg:mx-10">
+              <div class="swiper-wrapper">
                   <div class="swiper-slide">
                       <div class="max-w-sm rounded overflow-hidden shadow-lg bg-[#474747] bg-opacity-10">
                           <img class="w-full" src="../dist/img/bank.png" alt="Finance Image" />
@@ -211,8 +212,7 @@
             </div>
           </div>
       </div>
-      
-      </div>
+    </div>
     </section>
     <section id="kolaborasi">
       <div class="first-kolaborasi pt-36 w-full min-h-screen bg-no-repeat bg-cover bg-center bg-[url(../assets/img/Background.png)] text-white">
@@ -318,9 +318,8 @@
           </div>
         </div>
       </div>
-    
       <footer class="bg-[#161616] bg-opacity-20 py-8 mt-5 text-white">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-[7%]">
           <div class="flex flex-col md:flex-row justify-between">
             <div class="mb-6 md:mb-0 flex">
               <div class="mx-2">
@@ -356,13 +355,9 @@
         </div>
       </footer>
     </section>
-    
-    
-
-   
-
     <!-- Include Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
     <script>
       const swiper = new Swiper(".swiper", {
        
@@ -405,13 +400,6 @@
         } else {
             navbar.classList.remove('blur');
         }
-
-        const menuToggle = document.querySelector('.menu-toggle input');
-        const nav = document.querySelector('nav ul');
-
-        menuToggle.addEventListener('click', function(){
-            nav.classList.toggle('slide')
-        });
 });
     </script>
   </body>

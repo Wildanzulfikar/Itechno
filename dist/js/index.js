@@ -1,6 +1,7 @@
-const menuToggle = document.querySelector('.menu-toggle input');
-    const nav = document.querySelector('nav ul');
+const hamburgerMenu = document.getElementById('hamburger-menu');
+const hamburgerMenuIcon  = document.getElementById('hamburger-menu i');
+const drowpdownMenu = document.getElementById('dropdown-menu');
 
-    menuToggle.addEventListener('click', function(){
-        nav.classList.toggle('slide')
-    });
+hamburgerMenu.onclick = function() {
+    drowpdownMenu.classList.toggle('open');
+}
