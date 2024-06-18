@@ -10,8 +10,9 @@
 body {
   overflow-x: hidden;
 }
+
 /* animasi navigation */
-ul li a::after {
+.nav-main li a::after {
   content: "";
   display: block;
   padding-bottom: 0.2rem;
@@ -83,7 +84,7 @@ ul li a:hover::after {
 #teknologi {
   background: url("../assets/img/Background.png") no-repeat center center;
   background-size: cover;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .bg-custom {
