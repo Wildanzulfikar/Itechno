@@ -11,7 +11,11 @@ body {
   overflow-x: hidden;
 }
 
-/* animasi navigation */
+#teknologi, #kontak, #industri, #kolaborasi  {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 .nav-main li a::after {
   content: "";
   display: block;
@@ -25,7 +29,6 @@ ul li a:hover::after {
   transition: 0.2s linear;
 }
 
-/* hamburger menu */
 .hamburger-menu {
   display: none;
 }
@@ -81,12 +84,6 @@ ul li a:hover::after {
   transform: translateZ(60px);
 }
 
-#teknologi {
-  background: url("../assets/img/Background.png") no-repeat center center;
-  background-size: cover;
-  /* overflow: hidden; */
-}
-
 .bg-custom {
   background: linear-gradient(to right, #313874 20%, #0d0404 60%, #231b7c 80%);
 }
@@ -95,18 +92,7 @@ ul li a:hover::after {
   border-width: 3px;
   border-style: solid;
   border-image: linear-gradient(to right, #ff0000, #4d0fff) 1;
-
   padding: 10px;
-}
-
-#industri {
-  background: url("../assets/img/Background.png") no-repeat center center;
-  background-size: cover;
-}
-
-#kontak {
-  background: url("../assets/img/Background.png") no-repeat center center;
-  background-size: cover;
 }
 
 .swiper {
@@ -140,8 +126,6 @@ ul li a:hover::after {
 .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #fff;
 }
-
-/* responsive navbar */
 
 @media (max-width: 992px) {
   nav ul li {

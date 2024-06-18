@@ -743,6 +743,10 @@ video {
   gap: 2rem;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -814,8 +818,8 @@ video {
   --tw-bg-opacity: 0.2;
 }
 
-.bg-\[url\(\.\.\/assets\/img\/Background\.png\)\] {
-  background-image: url(../assets/img/Background.png);
+.bg-\[url\(img\/Background\.png\)\] {
+  background-image: url(img/Background.png);
 }
 
 .bg-\[url\(img\/brain-killer\.png\)\] {
@@ -902,9 +906,19 @@ video {
   padding: 2rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .px-4 {
@@ -978,6 +992,10 @@ video {
   padding-top: 9rem;
 }
 
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1039,6 +1057,18 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
+}
+
+.text-\[10px\] {
+  font-size: 10px;
+}
+
+.text-\[4px\] {
+  font-size: 4px;
 }
 
 .font-bold {
@@ -1113,7 +1143,10 @@ body {
   overflow-x: hidden;
 }
 
-/* animasi navigation */
+#teknologi, #kontak, #industri, #kolaborasi  {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 
 .nav-main li a::after {
   content: "";
@@ -1127,8 +1160,6 @@ ul li a:hover::after {
   transform: scaleX(0.6);
   transition: 0.2s linear;
 }
-
-/* hamburger menu */
 
 .hamburger-menu {
   display: none;
@@ -1186,12 +1217,6 @@ ul li a:hover::after {
   transform: translateZ(60px);
 }
 
-#teknologi {
-  background: url("../assets/img/Background.png") no-repeat center center;
-  background-size: cover;
-  /* overflow: hidden; */
-}
-
 .bg-custom {
   background: linear-gradient(to right, #313874 20%, #0d0404 60%, #231b7c 80%);
 }
@@ -1202,16 +1227,6 @@ ul li a:hover::after {
   -o-border-image: linear-gradient(to right, #ff0000, #4d0fff) 1;
      border-image: linear-gradient(to right, #ff0000, #4d0fff) 1;
   padding: 10px;
-}
-
-#industri {
-  background: url("../assets/img/Background.png") no-repeat center center;
-  background-size: cover;
-}
-
-#kontak {
-  background: url("../assets/img/Background.png") no-repeat center center;
-  background-size: cover;
 }
 
 .swiper {
@@ -1246,8 +1261,6 @@ ul li a:hover::after {
 .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #fff;
 }
-
-/* responsive navbar */
 
 @media (max-width: 992px) {
   nav ul li {
@@ -1364,8 +1377,8 @@ ul li a:hover::after {
     padding-right: 7%;
   }
 
-  .md\:pt-48 {
-    padding-top: 12rem;
+  .md\:pt-52 {
+    padding-top: 13rem;
   }
 
   .md\:text-\[24px\] {
@@ -1375,6 +1388,48 @@ ul li a:hover::after {
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .md\:text-\[20px\] {
+    font-size: 20px;
+  }
+
+  .md\:text-\[28px\] {
+    font-size: 28px;
+  }
+
+  .md\:text-\[18px\] {
+    font-size: 18px;
+  }
+
+  .md\:text-\[8px\] {
+    font-size: 8px;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:text-\[12px\] {
+    font-size: 12px;
+  }
+
+  .md\:text-\[10px\] {
+    font-size: 10px;
+  }
+
+  .md\:text-\[9px\] {
+    font-size: 9px;
+  }
+
+  .md\:text-\[5px\] {
+    font-size: 5px;
   }
 }
 
@@ -1441,6 +1496,11 @@ ul li a:hover::after {
 
   .lg\:text-\[38px\] {
     font-size: 38px;
+  }
+
+  .lg\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
