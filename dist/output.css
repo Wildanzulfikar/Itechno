@@ -574,6 +574,10 @@ video {
   grid-column: span 12 / span 12;
 }
 
+.col-span-8 {
+  grid-column: span 8 / span 8;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -581,6 +585,56 @@ video {
 .mx-\[106px\] {
   margin-left: 106px;
   margin-right: 106px;
+}
+
+.mx-\[7\%\] {
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+.mx-80 {
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.mx-12 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.mx-20 {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.mx-36 {
+  margin-left: 9rem;
+  margin-right: 9rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.mx-14 {
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+}
+
+.mx-16 {
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 
 .mb-1 {
@@ -717,6 +771,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-center {
@@ -1316,6 +1374,16 @@ ul li a:hover::after {
   .md\:mx-\[10\%\] {
     margin-left: 10%;
     margin-right: 10%;
+  }
+
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .md\:mx-\[107px\] {
+    margin-left: 107px;
+    margin-right: 107px;
   }
 
   .md\:mt-0 {
